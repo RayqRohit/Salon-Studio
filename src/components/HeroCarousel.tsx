@@ -37,7 +37,7 @@ export default function HeroCarousel() {
   };
 
   return (
-    <div className="relative w-full h-[640px] lg:h-full min-h-[580px] rounded-[12px] rounded-tl-none overflow-hidden bg-[#0e1011] select-none group">
+    <div className="relative w-full h-[640px] lg:h-full min-h-[580px] rounded-[12px] rounded-tl-none overflow-hidden bg-[#0e1011] select-none">
       {/* Docked Top-Left Navbar */}
       <Navbar />
 
@@ -65,10 +65,10 @@ export default function HeroCarousel() {
         type="button"
         onClick={prevSlide}
         aria-label="Previous slide"
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-[8px] bg-black/40 backdrop-blur-md flex items-center justify-center text-white/90 hover:bg-black/70 hover:scale-105 transition active:scale-95"
+        className="absolute left-8 top-1/2 -translate-y-1/2 z-20 w-[40px] h-[40px] rounded-[4px] bg-[#0e1011]/20 hover:bg-[#0e1011]/40 transition-colors flex items-center justify-center cursor-pointer"
       >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="15 18 9 12 15 6" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+          <path fill="transparent" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M22.5 12.5 15 20l7.5 7.5" />
         </svg>
       </button>
 
@@ -77,10 +77,10 @@ export default function HeroCarousel() {
         type="button"
         onClick={nextSlide}
         aria-label="Next slide"
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-[8px] bg-black/40 backdrop-blur-md flex items-center justify-center text-white/90 hover:bg-black/70 hover:scale-105 transition active:scale-95"
+        className="absolute right-8 top-1/2 -translate-y-1/2 z-20 w-[40px] h-[40px] rounded-[4px] bg-[#0e1011]/20 hover:bg-[#0e1011]/40 transition-colors flex items-center justify-center cursor-pointer"
       >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="9 18 15 12 9 6" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+          <path fill="transparent" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.5 12.5 25 20l-7.5 7.5" />
         </svg>
       </button>
 
