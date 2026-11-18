@@ -32,16 +32,18 @@
   - Verified local environment (Node v22, npm v10).
   - Created persistent project tracking (`PROJECT_PROGRESS.md`).
 
-- [ ] **Milestone 3: Public Website UI & Frontend Design** *(Active / Next Up)*
-  - Luxury / Modern Salon Theme & Design System (Tailwind CSS, fonts, color palette).
-  - Navigation Bar & Mobile Drawer.
-  - Hero Section (High-impact salon headline, imagery & quick CTAs).
-  - Services & Pricing Showcase with Men / Women / Unisex category filtering.
-  - Hair & Beauty Transformation Gallery.
-  - Stylist Team Showcase & Customer Testimonials.
-  - Floating WhatsApp Booking button & Contact / Google Maps section.
+- [x] **Milestone 3: Public Website UI & Frontend Design** *(Completed: 2026-11-18)*
+  - Downloaded template fonts (`DM Sans`, `Geist`, `Inter`) to `public/fonts/`.
+  - Downloaded high-res template images & SVGs to `public/images/`.
+  - Replicated exact Framer-style layout:
+    - Docked top-left Navbar with brand logo, links, and theme toggle switch.
+    - Interactive Hero Carousel (3 slides, prev/next arrows, active dots, "View Project" button, "Selected Work" notch).
+    - Profile Bio Card (Avatar, name, role, bio description).
+    - Social Links stack (Instagram, Pinterest, Behance, Twitter + solid white Contact Me button).
+    - Latest Work showcase (Section header, 2-column image cards with "Beige" & "Darkness" notch tags).
+  - Production build successfully compiles with 0 errors.
 
-- [ ] **Milestone 4: Supabase Database & Prisma Modeling**
+- [ ] **Milestone 4: Supabase Database & Prisma Modeling** *(Next Up)*
   - Setup Supabase project & link PostgreSQL via Prisma.
   - Convert frontend mock data models to production Prisma schema.
   - Connect database queries directly into public website pages.
@@ -71,4 +73,7 @@
 | **2026-11-17** | **Strategy** | Switched roadmap to **UI-First approach**: build public website UI first with mock data, then integrate Supabase & Prisma. | ✅ Done |
 | **2026-11-18** | **Cleanup** | Removed default Next.js boilerplate styling & page content (`page.tsx`, `globals.css`, `layout.tsx`). Set clean canvas for salon UI. | ✅ Done |
 | **2026-11-18** | **Cleanup** | Removed all unused default Next.js SVG icons (`next.svg`, `vercel.svg`, `file.svg`, `globe.svg`, `window.svg`) and updated `README.md`. | ✅ Done |
-| **Pending** | **Step 2 (UI)** | Build public website layout, Navbar, Hero section, and Services showcase. | ⏳ Planned |
+| **2026-11-18** | **Assets** | Downloaded all reference fonts (`DM Sans`, `Geist`, `Inter`) to `public/fonts/` and high-res template images to `public/images/`. | ✅ Done |
+| **2026-11-18** | **Homepage UI** | Built full main page matching the reference: docked Navbar, interactive Hero Carousel with notch badges, Profile Bio Card, Social Links Stack, and Latest Work cards. | ✅ Done |
+| **2026-11-18** | **UI Refinement** | Refined 1:1 match with Framer template: updated profile avatar to exact image, styled "Latest Work" into a dark rounded card container, fixed icons (outline camera, cursive Pinterest P, Behance Bē, classic Twitter bird, envelope), and aligned heights. | ✅ Done |
+| **Pending** | **Step 2 (UI)** | Add secondary pages (Work, About, Contact) or adapt content specifically for Salon Studio services. | ⏳ Planned |
