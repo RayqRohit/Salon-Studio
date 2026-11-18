@@ -70,4 +70,5 @@
 | **2026-11-17** | **Step 1** | Created `PROJECT_PROGRESS.md` to track progress and future changes. | ✅ Done |
 | **2026-11-17** | **Strategy** | Switched roadmap to **UI-First approach**: build public website UI first with mock data, then integrate Supabase & Prisma. | ✅ Done |
 | **2026-11-18** | **Cleanup** | Removed default Next.js boilerplate styling & page content (`page.tsx`, `globals.css`, `layout.tsx`). Set clean canvas for salon UI. | ✅ Done |
+| **2026-11-18** | **Cleanup** | Removed all unused default Next.js SVG icons (`next.svg`, `vercel.svg`, `file.svg`, `globe.svg`, `window.svg`) and updated `README.md`. | ✅ Done |
 | **Pending** | **Step 2 (UI)** | Build public website layout, Navbar, Hero section, and Services showcase. | ⏳ Planned |
