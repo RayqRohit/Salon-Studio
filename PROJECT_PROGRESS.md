@@ -69,4 +69,5 @@
 | **2026-11-17** | **Step 1** | Initialized Next.js 16 app with TypeScript, Tailwind CSS v4, and App Router structure. | ✅ Done |
 | **2026-11-17** | **Step 1** | Created `PROJECT_PROGRESS.md` to track progress and future changes. | ✅ Done |
 | **2026-11-17** | **Strategy** | Switched roadmap to **UI-First approach**: build public website UI first with mock data, then integrate Supabase & Prisma. | ✅ Done |
+| **2026-11-18** | **Cleanup** | Removed default Next.js boilerplate styling & page content (`page.tsx`, `globals.css`, `layout.tsx`). Set clean canvas for salon UI. | ✅ Done |
 | **Pending** | **Step 2 (UI)** | Build public website layout, Navbar, Hero section, and Services showcase. | ⏳ Planned |
