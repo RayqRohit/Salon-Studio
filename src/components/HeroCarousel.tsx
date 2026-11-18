@@ -37,7 +37,7 @@ export default function HeroCarousel() {
   };
 
   return (
-    <div className="relative w-full h-[640px] lg:h-[calc(100vh-28px)] min-h-[580px] rounded-[12px] overflow-hidden bg-[#181b1c] select-none group">
+    <div className="relative w-full h-[640px] lg:h-full min-h-[580px] rounded-[12px] rounded-tl-none overflow-hidden bg-[#0e1011] select-none group">
       {/* Docked Top-Left Navbar */}
       <Navbar />
 
@@ -88,7 +88,7 @@ export default function HeroCarousel() {
       <div className="absolute left-5 bottom-5 z-20">
         <button
           type="button"
-          className="flex items-center gap-1.5 px-3.5 py-2 rounded-[8px] bg-black/40 backdrop-blur-md text-white/90 text-[13px] font-medium hover:bg-black/70 hover:text-white transition"
+          className="flex items-center gap-1.5 px-3.5 py-2 rounded-[8px] bg-black/40 backdrop-blur-md text-white/90 text-[13px] font-normal hover:bg-black/70 hover:text-white transition"
         >
           <span>View Project</span>
           <span className="text-xs">↗</span>
@@ -113,25 +113,25 @@ export default function HeroCarousel() {
       </div>
 
       {/* Bottom Right Inverted Notch "Selected Work" */}
-      <div className="absolute bottom-0 right-0 z-20 bg-[#0e1011] px-5 py-2.5 rounded-tl-[12px]">
-        <span className="text-[12px] font-medium text-white/90 tracking-tight">
+      <div className="absolute bottom-0 right-0 z-20 bg-[#0e1011] px-5 py-2.5 rounded-tl-[18px]">
+        <span className="text-[12px] font-normal text-white">
           Selected Work
         </span>
 
         {/* Inverted Corner Fillets */}
         <svg
-          className="absolute -top-3.5 right-0 w-3.5 h-3.5 pointer-events-none"
-          viewBox="0 0 16 16"
+          className="absolute -top-[18px] right-0 w-[18px] h-[18px] pointer-events-none"
+          viewBox="0 0 18 18"
           fill="none"
         >
-          <path d="M0 0 C0 8.83656 7.16344 16 16 16 H0 V0 Z" fill="#0e1011" transform="rotate(90 8 8)" />
+          <path d="M 18 18 L 18 0 C 18 9.941 9.941 18 0 18 Z" fill="#0e1011" />
         </svg>
         <svg
-          className="absolute bottom-0 -left-3.5 w-3.5 h-3.5 pointer-events-none"
-          viewBox="0 0 16 16"
+          className="absolute bottom-0 -left-[18px] w-[18px] h-[18px] pointer-events-none"
+          viewBox="0 0 18 18"
           fill="none"
         >
-          <path d="M0 0 C0 8.83656 7.16344 16 16 16 H0 V0 Z" fill="#0e1011" transform="rotate(90 8 8)" />
+          <path d="M 18 18 L 18 0 C 18 9.941 9.941 18 0 18 Z" fill="#0e1011" />
         </svg>
       </div>
     </div>
