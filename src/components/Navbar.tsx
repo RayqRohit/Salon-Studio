@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isDark, setIsDark] = useState(true);
 
   return (
-    <header className="absolute top-0 left-0 z-30 flex items-start bg-[#0e1011] pt-0 pb-3 px-4 rounded-br-[20px] select-none">
+    <header className="absolute top-0 left-0 z-30 flex items-center bg-[#0e1011] pt-0 pb-[10px] px-[16px] rounded-br-[20px] select-none">
       {/* Brand Logo */}
       <Link href="/" className="group flex items-center gap-2 mr-5 cursor-pointer">
         <svg
@@ -23,7 +23,7 @@ export default function Navbar() {
           />
         </svg>
         <div className="relative inline-flex flex-col justify-start overflow-hidden h-[18px] leading-[18px] font-medium text-[15px] tracking-normal">
-          <div className="flex flex-col transition-transform duration-300 ease-out -translate-y-1/2 group-hover:translate-y-0">
+          <div className="flex flex-col transition-transform duration-300 ease-out translate-y-0 group-hover:-translate-y-1/2">
             <span className="h-[18px] flex items-center text-white">
               hanssen
             </span>
@@ -47,7 +47,7 @@ export default function Navbar() {
             href={item.href}
             className="group relative inline-flex flex-col justify-start overflow-hidden h-[18px] cursor-pointer"
           >
-            <div className="flex flex-col transition-transform duration-300 ease-out -translate-y-1/2 group-hover:translate-y-0">
+            <div className="flex flex-col transition-transform duration-300 ease-out translate-y-0 group-hover:-translate-y-1/2">
               <span className="h-[18px] flex items-center text-white">
                 {item.label}
               </span>
@@ -63,7 +63,7 @@ export default function Navbar() {
       <button
         type="button"
         onClick={() => setIsDark(!isDark)}
-        className="w-[30px] h-[20px] rounded-full bg-[#242628] flex items-center p-[6px] cursor-pointer hover:bg-[#2e3134] transition-colors"
+        className="w-[30px] h-[20px] rounded-full bg-[#ffffff1c] flex items-center p-[6px] cursor-pointer hover:bg-[#ffffff25] transition-colors"
         aria-label="Toggle theme"
       >
         <span
@@ -75,18 +75,24 @@ export default function Navbar() {
 
       {/* Inverted Corner Fillets */}
       <svg
-        className="absolute -right-[18px] top-0 w-[18px] h-[18px] pointer-events-none"
+        className="absolute -right-[18px] top-0 w-[18px] h-[18px] overflow-visible pointer-events-none"
         viewBox="0 0 18 18"
         fill="none"
       >
-        <path d="M 0 0 L 0 18 C 0 8.059 8.059 0 18 0 Z" fill="#0e1011" />
+        <path
+          d="M 0 18 L -1 18 L -1 -1 L 18 -1 L 18 0 C 8.059 0 0 8.059 0 18 Z"
+          fill="#0e1011"
+        />
       </svg>
       <svg
-        className="absolute left-0 -bottom-[18px] w-[18px] h-[18px] pointer-events-none"
+        className="absolute left-0 -bottom-[18px] w-[18px] h-[18px] overflow-visible pointer-events-none"
         viewBox="0 0 18 18"
         fill="none"
       >
-        <path d="M 0 0 L 0 18 C 0 8.059 8.059 0 18 0 Z" fill="#0e1011" />
+        <path
+          d="M 0 18 L -1 18 L -1 -1 L 18 -1 L 18 0 C 8.059 0 0 8.059 0 18 Z"
+          fill="#0e1011"
+        />
       </svg>
     </header>
   );

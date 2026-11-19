@@ -115,33 +115,41 @@ export default function LatestWork() {
               src={item.src}
               alt={item.alt}
               fill
-              className="object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+              className="object-cover object-top filter blur-0 group-hover:blur-[6px] will-change-[filter] transition-[filter] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
               sizes="(min-width: 1024px) 25vw, 50vw"
             />
 
-            {/* Top-Left Notched Badge with Tag Name and Animated Arrow */}
-            <div className="absolute top-0 left-0 z-10 bg-[#0e1011] pl-3.5 pr-4 py-2 rounded-br-[18px] flex items-center gap-1.5">
-              <span className="text-[12px] font-normal text-white">
+            {/* Top-Left Notched Badge with Tag Name and Animated Expanding Arrow */}
+            <div className="absolute top-0 left-0 z-10 bg-[#0e1011] pt-[8px] pb-[12px] px-[16px] rounded-br-[18px] inline-flex items-center select-none">
+              <span className="text-[14px] font-normal text-white leading-[1.2] whitespace-pre">
                 {item.title}
               </span>
-              <span className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-[12px] text-white/80 leading-none">
-                →
+              <span className="inline-flex items-center overflow-hidden max-w-0 opacity-0 -translate-x-1.5 group-hover:max-w-[28px] group-hover:opacity-100 group-hover:translate-x-0 group-hover:ml-2 transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)]">
+                <span className="text-[14px] font-normal text-white leading-none shrink-0">
+                  →
+                </span>
               </span>
 
               {/* Inverted corner fillets */}
               <svg
-                className="absolute -right-[18px] top-0 w-[18px] h-[18px] pointer-events-none"
+                className="absolute -right-[18px] top-0 w-[18px] h-[18px] overflow-visible pointer-events-none"
                 viewBox="0 0 18 18"
                 fill="none"
               >
-                <path d="M 0 0 L 0 18 C 0 8.059 8.059 0 18 0 Z" fill="#0e1011" />
+                <path
+                  d="M 0 18 L -1 18 L -1 -1 L 18 -1 L 18 0 C 8.059 0 0 8.059 0 18 Z"
+                  fill="#0e1011"
+                />
               </svg>
               <svg
-                className="absolute left-0 -bottom-[18px] w-[18px] h-[18px] pointer-events-none"
+                className="absolute left-0 -bottom-[18px] w-[18px] h-[18px] overflow-visible pointer-events-none"
                 viewBox="0 0 18 18"
                 fill="none"
               >
-                <path d="M 0 0 L 0 18 C 0 8.059 8.059 0 18 0 Z" fill="#0e1011" />
+                <path
+                  d="M 0 18 L -1 18 L -1 -1 L 18 -1 L 18 0 C 8.059 0 0 8.059 0 18 Z"
+                  fill="#0e1011"
+                />
               </svg>
             </div>
           </Link>

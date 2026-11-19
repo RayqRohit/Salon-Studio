@@ -5,7 +5,7 @@ export default function BioCard() {
   return (
     <Link
       href="/about"
-      className="group relative bg-white/[0.07] hover:bg-white/[0.11] transition-colors duration-300 rounded-[12px] py-8 md:py-10 lg:py-11 px-6 md:px-8 lg:px-9 text-white flex flex-col justify-between h-full select-none cursor-pointer overflow-hidden"
+      className="group relative bg-white/[0.07] hover:bg-white/[0.11] transition-colors duration-500 ease-out rounded-[12px] py-8 md:py-10 lg:py-11 px-6 md:px-8 lg:px-9 text-white flex flex-col justify-between h-full select-none cursor-pointer overflow-hidden"
     >
       {/* Top Profile Header */}
       <div className="flex items-center gap-4">
