@@ -171,17 +171,17 @@ export default function AboutPage() {
               {exhibitions.map((item, index) => (
                 <div
                   key={index}
-                  className="group w-full min-h-[72px] md:min-h-0 md:h-[62px] px-5 md:px-6 py-3.5 md:py-0 rounded-[12px] bg-white/[0.05] hover:bg-white/[0.10] flex items-center justify-between text-white transition-all duration-300 ease-out cursor-pointer select-none"
+                  className="group w-full min-h-[76px] md:min-h-0 md:h-[66px] px-5 md:px-6 py-4 md:py-0 rounded-[12px] bg-white/[0.05] hover:bg-white/[0.10] flex items-center justify-between text-white transition-all duration-300 ease-out cursor-pointer select-none"
                 >
                   <div className="flex flex-col gap-1 md:block">
-                    <span className="text-[15px] md:text-[16px] font-normal text-white">
+                    <span className="text-[16px] md:text-[18px] font-normal text-white tracking-tight">
                       {item.title}
                     </span>
-                    <span className="text-[13px] font-normal text-white/60 md:hidden">
+                    <span className="text-[14px] font-normal text-white/60 md:hidden">
                       {item.year}
                     </span>
                   </div>
-                  <div className="flex items-center text-[14px] md:text-[15px] shrink-0">
+                  <div className="flex items-center text-[15px] md:text-[16px] shrink-0">
                     <span className="hidden md:inline text-white/60 group-hover:text-white/80 transition-colors duration-300">
                       {item.year}
                     </span>
@@ -189,8 +189,8 @@ export default function AboutPage() {
                     <div className="flex items-center text-white/70 group-hover:text-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] md:max-w-0 md:opacity-0 md:-translate-x-2 md:pointer-events-none md:group-hover:max-w-[28px] md:group-hover:opacity-100 md:group-hover:translate-x-0 md:group-hover:ml-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="15"
+                        width="16"
+                        height="16"
                         viewBox="0 0 16 16"
                         fill="none"
                         stroke="currentColor"
@@ -224,17 +224,17 @@ export default function AboutPage() {
               {awards.map((item, index) => (
                 <div
                   key={index}
-                  className="group w-full min-h-[72px] md:min-h-0 md:h-[62px] px-5 md:px-6 py-3.5 md:py-0 rounded-[12px] bg-white/[0.05] hover:bg-white/[0.10] flex items-center justify-between text-white transition-all duration-300 ease-out cursor-pointer select-none"
+                  className="group w-full min-h-[76px] md:min-h-0 md:h-[66px] px-5 md:px-6 py-4 md:py-0 rounded-[12px] bg-white/[0.05] hover:bg-white/[0.10] flex items-center justify-between text-white transition-all duration-300 ease-out cursor-pointer select-none"
                 >
                   <div className="flex flex-col gap-1 md:block">
-                    <span className="text-[15px] md:text-[16px] font-normal text-white">
+                    <span className="text-[16px] md:text-[18px] font-normal text-white tracking-tight">
                       {item.title}
                     </span>
-                    <span className="text-[13px] font-normal text-white/60 md:hidden">
+                    <span className="text-[14px] font-normal text-white/60 md:hidden">
                       {item.year}
                     </span>
                   </div>
-                  <div className="flex items-center text-[14px] md:text-[15px] shrink-0">
+                  <div className="flex items-center text-[15px] md:text-[16px] shrink-0">
                     <span className="hidden md:inline text-white/60 group-hover:text-white/80 transition-colors duration-300">
                       {item.year}
                     </span>
@@ -242,8 +242,8 @@ export default function AboutPage() {
                     <div className="flex items-center text-white/70 group-hover:text-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] md:max-w-0 md:opacity-0 md:-translate-x-2 md:pointer-events-none md:group-hover:max-w-[28px] md:group-hover:opacity-100 md:group-hover:translate-x-0 md:group-hover:ml-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="15"
+                        width="16"
+                        height="16"
                         viewBox="0 0 16 16"
                         fill="none"
                         stroke="currentColor"
