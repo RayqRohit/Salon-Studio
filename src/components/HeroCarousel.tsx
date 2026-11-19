@@ -133,7 +133,7 @@ export default function HeroCarousel() {
   const activeDotIndex = ((current % slides.length) + slides.length) % slides.length;
 
   return (
-    <div className="relative w-full h-[640px] lg:h-full min-h-[580px] rounded-[12px] overflow-hidden bg-[#0e1011] select-none">
+    <div className="relative w-full h-[480px] sm:h-[540px] lg:h-full lg:min-h-[580px] rounded-[12px] overflow-hidden bg-[#0e1011] select-none">
       {/* Docked Top-Left Navbar */}
       <Navbar />
 
@@ -171,7 +171,7 @@ export default function HeroCarousel() {
               />
 
               {/* Slide-specific "View Project ↗" button that slides with the image */}
-              <div className="absolute left-8 bottom-8 z-10 pointer-events-auto">
+              <div className="absolute left-5 bottom-5 sm:left-8 sm:bottom-8 z-10 pointer-events-auto">
                 <a
                   href="#work"
                   className="flex items-center gap-1.5 px-[14px] py-[10px] rounded-[6px] bg-[#0e1011]/20 hover:bg-[#0e1011]/40 text-white text-[14px] font-normal leading-none transition-colors cursor-pointer"
@@ -203,7 +203,7 @@ export default function HeroCarousel() {
         type="button"
         onClick={prevSlide}
         aria-label="Previous slide"
-        className="absolute left-8 top-1/2 -translate-y-1/2 z-20 w-[40px] h-[40px] rounded-[4px] bg-[#0e1011]/20 hover:bg-[#0e1011]/40 transition-colors flex items-center justify-center cursor-pointer"
+        className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 w-[40px] h-[40px] rounded-[4px] bg-[#0e1011]/20 hover:bg-[#0e1011]/40 transition-colors flex items-center justify-center cursor-pointer"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
           <path fill="transparent" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M22.5 12.5 15 20l7.5 7.5" />
@@ -215,7 +215,7 @@ export default function HeroCarousel() {
         type="button"
         onClick={nextSlide}
         aria-label="Next slide"
-        className="absolute right-8 top-1/2 -translate-y-1/2 z-20 w-[40px] h-[40px] rounded-[4px] bg-[#0e1011]/20 hover:bg-[#0e1011]/40 transition-colors flex items-center justify-center cursor-pointer"
+        className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 w-[40px] h-[40px] rounded-[4px] bg-[#0e1011]/20 hover:bg-[#0e1011]/40 transition-colors flex items-center justify-center cursor-pointer"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
           <path fill="transparent" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.5 12.5 25 20l-7.5 7.5" />
@@ -223,7 +223,7 @@ export default function HeroCarousel() {
       </button>
 
       {/* Bottom Center Pagination Dots Capsule */}
-      <div className="absolute left-1/2 -translate-x-1/2 bottom-[30px] z-20 flex items-center bg-black/20 rounded-full px-2 py-1 select-none">
+      <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 bottom-[30px] z-20 items-center bg-black/20 rounded-full px-2 py-1 select-none">
         {slides.map((_, i) => (
           <button
             key={i}

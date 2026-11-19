@@ -35,10 +35,12 @@ export default function Home() {
           className="w-full h-full lg:overflow-y-auto no-scrollbar [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden flex flex-col gap-3"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {/* Top Row: Exact 60% Left (BioCard) and 40% Right (SocialLinks) */}
-          <div className="grid grid-cols-1 sm:grid-cols-[6fr_4fr] gap-3 items-stretch shrink-0">
+          {/* Top Row: BioCard (Full-width on mobile, 60% on desktop) and SocialLinks (Hidden on smaller screens) */}
+          <div className="grid grid-cols-1 md:grid-cols-[6fr_4fr] gap-3 items-stretch shrink-0">
             <BioCard />
-            <SocialLinks />
+            <div className="hidden md:block">
+              <SocialLinks />
+            </div>
           </div>
 
           {/* Bottom Section: Latest Work Card Header and 10-Card Showcase */}
