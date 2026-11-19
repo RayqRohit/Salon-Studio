@@ -1,0 +1,310 @@
+{
+  "beige": {
+    "slug": "beige",
+    "title": "Beige",
+    "description": "Captured the elegance of a modern cityscape, blending architectural lines with natural light to showcase the vibrant pulse of urban life.",
+    "year": "2024",
+    "client": "Beige",
+    "service": "Commercial",
+    "location": "Prague",
+    "mainImage": "https://framerusercontent.com/images/smOLLHxUUE1fuwAoGnJlQVmY0.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/li6CQzbj32aDRV92K6jGaDGwtc.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/BJ6gmDEMM2YNAMeyKq5J8WfodSc.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/mW5UwIugypiJOXdy1UjbfWoA.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/HuMxCZo70Ys4Cti3EGoucufVpA.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "darkness",
+      "title": "Darkness",
+      "description": "A lifestyle photoshoot highlighting authentic, candid moments to evoke a sense of warmth and connection in everyday scenes.",
+      "image": "https://framerusercontent.com/images/b4tQeJBVej8RCijw5rLzFvL994.webp?width=900&height=1200"
+    }
+  },
+  "black-white": {
+    "slug": "black-white",
+    "title": "Black & White",
+    "description": "A family portrait series, capturing genuine interactions and emotions in a natural, relaxed setting to create timeless memories.",
+    "year": "2023",
+    "client": "Black & White",
+    "service": "Editorial",
+    "location": "Hamburg",
+    "mainImage": "https://framerusercontent.com/images/27TqVt8w6dBLXWItsgJR10eeQ.webp?width=900&height=1200",
+    "galleryImages": [
+      "https://framerusercontent.com/images/cwfNhrrtvj4l1WDMWke5wuhHQg.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/Agt0ICUZdWwZckzQLEuIiUllwA.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/IoSvdJePSZZPe4vpkuChGwIvQr8.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/ptafvh9J2Gqhx97lqgpmLlyo.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "streets",
+      "title": "Streets",
+      "description": "An adventure photography series, capturing the thrill and beauty of outdoor exploration through dynamic action shots and vast landscapes.",
+      "image": "https://framerusercontent.com/images/XLuWs1UtpjB3y6d3AXh7o6vZXQ.webp?width=900&height=1200"
+    }
+  },
+  "brand": {
+    "slug": "brand",
+    "title": "Brand",
+    "description": "A serene nature photography project, focusing on the tranquil beauty of landscapes and capturing the soft interplay between light and texture.",
+    "year": "2023",
+    "client": "Brand",
+    "service": "Editorial",
+    "location": "Berlin",
+    "mainImage": "https://framerusercontent.com/images/bhoZ7ZXGwGYLkjaT0BDOc5WlMx8.webp?width=900&height=1200",
+    "galleryImages": [
+      "https://framerusercontent.com/images/dAVT1anIaWNU24ZnHlhsYXDNf3g.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/AMdOO2aceBdWytTEsQS0i94gw0c.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/pzqNM5nPVy7J3JUguRB8mZVXZro.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/6QYzzPQngcupQVzy0J69mdnJyR4.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "studio",
+      "title": "Studio",
+      "description": "A fashion editorial shoot that merges bold, avant-garde styling with dynamic poses to create high-impact imagery.",
+      "image": "https://framerusercontent.com/images/z4ecyv9fHFUnJEC1FWQLH2N5oQg.webp?width=900&height=1200"
+    }
+  },
+  "city": {
+    "slug": "city",
+    "title": "City",
+    "description": "A moody, black-and-white portrait series capturing the depth of character through striking contrast and shadow play.",
+    "year": "2024",
+    "client": "City",
+    "service": "Commercial",
+    "location": "Prague",
+    "mainImage": "https://framerusercontent.com/images/lro9Ye9aOactC79tzUmnxMvIMNw.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/4Ucd1kztZu1XfDNytjzjOrDY294.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/bcawXpg12I9IVwdk9EPa4Av7Q.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/AR5X8FdT8NxCPmizGO4oRCrxs.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/MQpUZN1PHrxPRbb7D1DanCjF5oY.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "nature",
+      "title": "Nature",
+      "description": "A dynamic event shoot, filled with energy and spontaneous moments that reflect the vibrancy of the gathering.",
+      "image": "https://framerusercontent.com/images/GCnIcOL9Uf7aI4qr5XkGhmxhBTw.webp?width=900&height=1200"
+    }
+  },
+  "colors": {
+    "slug": "colors",
+    "title": "Colors",
+    "description": "A travel photography series capturing the cultural richness and vibrant colors of an off-the-beaten-path destination.",
+    "year": "2023",
+    "client": "Colors",
+    "service": "Editorial",
+    "location": "Dubai",
+    "mainImage": "https://framerusercontent.com/images/6kFmryka7XfpECQ3Vi4UjRJOU.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/4G4uEvIgHW6klC4E269vIfss.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/HQ3wBi6Mzq6jaLx7i2oROg6Nk.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/bX4ettf4nKoIjJXTCbI4NRMiO8.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/YFlKNGyx3ygPXBGuTnS6uhkPg.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "duo",
+      "title": "Duo",
+      "description": "A conceptual fine art project using surreal imagery to explore themes of identity and transformation through intricate compositions.",
+      "image": "https://framerusercontent.com/images/QYinvCqGayajqqUB7y9Yv3PQnM.webp?width=900&height=1200"
+    }
+  },
+  "darkness": {
+    "slug": "darkness",
+    "title": "Darkness",
+    "description": "A lifestyle photoshoot highlighting authentic, candid moments to evoke a sense of warmth and connection in everyday scenes.",
+    "year": "2024",
+    "client": "Darkness",
+    "service": "Commercial",
+    "location": "New York",
+    "mainImage": "https://framerusercontent.com/images/b4tQeJBVej8RCijw5rLzFvL994.webp?width=900&height=1200",
+    "galleryImages": [
+      "https://framerusercontent.com/images/rGSjk4G3aonrralLZTrBn5SSQ.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/dMifgD36qGqlRRhSB1v3VRe4Uiw.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/hViQ2WKjFlDmJDH4iu68to0Nqk.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/MBKKc4QWep5qqnu92nmExW3Ge98.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "gentlemen",
+      "title": "Gentlemen",
+      "description": "A documentary-style project, focusing on the intimate stories of people in their natural environments, showcasing raw emotions and personal narratives.",
+      "image": "https://framerusercontent.com/images/W3RTifPhVH6fwcIl4YTSmibTMx8.webp?width=900&height=1200"
+    }
+  },
+  "duo": {
+    "slug": "duo",
+    "title": "Duo",
+    "description": "A conceptual fine art project using surreal imagery to explore themes of identity and transformation through intricate compositions.",
+    "year": "2023",
+    "client": "Duo",
+    "service": "Commercial",
+    "location": "Tokyo",
+    "mainImage": "https://framerusercontent.com/images/xZzoe07QtxjZ0ivRGOq9L2ODw.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/BCeONhgQTX1KAGB7FgCwYswY4F0.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/WMkbJJtDorWHw7UcyCtq5rzPtw.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/CzVM1eKV7B5QnBZTBhoannnHQA.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/bliIHylpl1ifjKZhKGHAUvyyu8.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "elegance",
+      "title": "Elegance",
+      "description": "A commercial product shoot emphasizing sleek design and texture to highlight the craftsmanship and quality of the items.",
+      "image": "https://framerusercontent.com/images/vfSdRUuKJ3mcaRvTiwWeJpeesMI.webp?width=900&height=1200"
+    }
+  },
+  "elegance": {
+    "slug": "elegance",
+    "title": "Elegance",
+    "description": "A commercial product shoot emphasizing sleek design and texture to highlight the craftsmanship and quality of the items.",
+    "year": "2023",
+    "client": "Elegance",
+    "service": "Editorial",
+    "location": "Prague",
+    "mainImage": "https://framerusercontent.com/images/D3RYtM9hLEI6yXLGgcmQwxuDBQ.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/gg4gk2YqP5drFFCZKeGM1D9OiM.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/Guj2GWuu4ILZxEax4IJsk2ids.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/AGTOBBoaERbLMoFIYN28aUhc7Q.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/hNpiNwf3zrSyl8WxLPUNIIZL7k.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "hat",
+      "title": "Hat",
+      "description": "A food photography project that focuses on bright, colorful compositions to make the dishes look both artistic and appetizing.",
+      "image": "https://framerusercontent.com/images/eKd266dJNYxys66JNMazAh6v2k.webp?width=900&height=1200"
+    }
+  },
+  "gentlemen": {
+    "slug": "gentlemen",
+    "title": "Gentlemen",
+    "description": "A documentary-style project, focusing on the intimate stories of people in their natural environments, showcasing raw emotions and personal narratives.",
+    "year": "2024",
+    "client": "Gentlemen",
+    "service": "Editorial",
+    "location": "Oslo",
+    "mainImage": "https://framerusercontent.com/images/05fXxTKUqHmPap8H4QN6tLgD6qM.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/CjVQj9Zih4TG0y4TIDPhRd0xJm8.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/zm1FneGoxIqqxbdq3FcLkFGce00.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/m7qoxz2RfMZ94xFEbTgEOa70.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/Q0C5k1XzbXpna5KBfId4fEr2JSM.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "city",
+      "title": "City",
+      "description": "A moody, black-and-white portrait series capturing the depth of character through striking contrast and shadow play.",
+      "image": "https://framerusercontent.com/images/hUNenIUyXWFh458IisAYleOXmpc.webp?width=900&height=1200"
+    }
+  },
+  "hat": {
+    "slug": "hat",
+    "title": "Hat",
+    "description": "A food photography project that focuses on bright, colorful compositions to make the dishes look both artistic and appetizing.",
+    "year": "2023",
+    "client": "Hat",
+    "service": "Commercial",
+    "location": "New York",
+    "mainImage": "https://framerusercontent.com/images/8qCjecxONGsY11qiezu5EZOyc.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/rutQ5XF4NRBKV6wqsNc5yndgK0.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/nRWcBdq6ra3D6cvAMVgAAbSGzCk.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/MdO9cB9ilSemlBpMSRXGpxRaoo.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/qJNSuFBg7ocw699c1GreAMD2x7w.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "black-white",
+      "title": "Black & White",
+      "description": "A family portrait series, capturing genuine interactions and emotions in a natural, relaxed setting to create timeless memories.",
+      "image": "https://framerusercontent.com/images/gadf0IfjxMpRJXHBdpy5PWYTmI.webp?width=1800&height=2400"
+    }
+  },
+  "nature": {
+    "slug": "nature",
+    "title": "Nature",
+    "description": "A dynamic event shoot, filled with energy and spontaneous moments that reflect the vibrancy of the gathering.",
+    "year": "2024",
+    "client": "Nature",
+    "service": "Editorial",
+    "location": "Vienna",
+    "mainImage": "https://framerusercontent.com/images/ZTLT0ArgKLy80DwalNobuJIT6Q.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/R2DylMw4rMaWfOh77iheu4Ds.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/gDHDEQPxdl4Qo44dGJHOgimOZY.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/3U5BrB6ww9w7xiSM2pcu96LPs.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/p2cyXpcsBA2RpYiTEdfyWQgUtlg.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "brand",
+      "title": "Brand",
+      "description": "A serene nature photography project, focusing on the tranquil beauty of landscapes and capturing the soft interplay between light and texture.",
+      "image": "https://framerusercontent.com/images/bhoZ7ZXGwGYLkjaT0BDOc5WlMx8.webp?width=900&height=1200"
+    }
+  },
+  "stoic": {
+    "slug": "stoic",
+    "title": "Stoic",
+    "description": "A personal project focusing on abstract photography, playing with shapes, colors, and textures to create visually captivating, artistic compositions.",
+    "year": "2023",
+    "client": "Stoic",
+    "service": "Commercial",
+    "location": "Prague",
+    "mainImage": "https://framerusercontent.com/images/wGavW5je8YWPGcOgA6JqOSvGsdQ.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/D4Ua8odzxfPQ3HODCE9YbZPo7o.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/NXZVNen8t5Phal1tH8iZv7gqXw.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/U3RZQrpeU0UNRlTgAMxKdLOeg.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/kKxTsqG5kqEx7cQaxGfaJ4vIc.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "beige",
+      "title": "Beige",
+      "description": "Captured the elegance of a modern cityscape, blending architectural lines with natural light to showcase the vibrant pulse of urban life.",
+      "image": "https://framerusercontent.com/images/fjsbcSbrSbXkpGEePyua6cFMbBg.webp?width=900&height=1200"
+    }
+  },
+  "streets": {
+    "slug": "streets",
+    "title": "Streets",
+    "description": "An adventure photography series, capturing the thrill and beauty of outdoor exploration through dynamic action shots and vast landscapes.",
+    "year": "2023",
+    "client": "Streets",
+    "service": "Commercial",
+    "location": "Oslo",
+    "mainImage": "https://framerusercontent.com/images/flwn8bSmUQjun6eTcJ8V9RnA8U.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/irrEL3PyCc54e7JFryvPaUelNV8.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/9TQbpgPKw9OKGBd4C9InUlsDA.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/DsfZIvmuoMfRtDAxx8sgYLvjV0.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/gap9PYVPgMXj9D8GupeiHpWlKMs.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "stoic",
+      "title": "Stoic",
+      "description": "A personal project focusing on abstract photography, playing with shapes, colors, and textures to create visually captivating, artistic compositions.",
+      "image": "https://framerusercontent.com/images/aBnyxwXLCHBZd9YWT9vpyUESqk.webp?width=900&height=1200"
+    }
+  },
+  "studio": {
+    "slug": "studio",
+    "title": "Studio",
+    "description": "A fashion editorial shoot that merges bold, avant-garde styling with dynamic poses to create high-impact imagery.",
+    "year": "2023",
+    "client": "Studio",
+    "service": "Commercial",
+    "location": "Prague",
+    "mainImage": "https://framerusercontent.com/images/6DHQ9mTE6aQdmLw1CJQREnuGhPY.webp?width=1800&height=2400",
+    "galleryImages": [
+      "https://framerusercontent.com/images/1j6cBrhqUCRmU46WbrO1HB9rwoQ.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/KcVRSk6cslsgJyuLwfB3QlQGJd4.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/Yqzu8iB6Gb2eJRUAaTzXZhPZVE.webp?width=1800&height=2400",
+      "https://framerusercontent.com/images/HGOCQqv8yVBsEB3D3YglkKgmWU.webp?width=1800&height=2400"
+    ],
+    "nextProject": {
+      "slug": "colors",
+      "title": "Colors",
+      "description": "A travel photography series capturing the cultural richness and vibrant colors of an off-the-beaten-path destination.",
+      "image": "https://framerusercontent.com/images/Qu8hPHDrVk1uIx4MZrtg1Z51BDo.webp?width=900&height=1200"
+    }
+  }
+}

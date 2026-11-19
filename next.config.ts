@@ -5,6 +5,15 @@ const nextConfig: NextConfig = {
   devIndicators: false,
   cacheComponents: true,
   partialPrefetching: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "framerusercontent.com",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

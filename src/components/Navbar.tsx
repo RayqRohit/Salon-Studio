@@ -3,10 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isDark, setIsDark] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   // Prevent background scroll when mobile menu overlay is active
   useEffect(() => {
@@ -53,26 +55,31 @@ export default function Navbar() {
         {/* Desktop Nav Links (Hidden on mobile/tablet) */}
         <nav className="hidden md:flex items-center gap-5 text-[14px] font-normal tracking-normal mr-4 leading-[18px]">
           {[
-            { label: "Work", href: "#work" },
+            { label: "Work", href: "/work" },
             { label: "About", href: "#about" },
             { label: "Blog", href: "#blog" },
             { label: "Contact", href: "#contact" },
-          ].map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="group relative inline-flex flex-col justify-start overflow-hidden h-[18px] cursor-pointer"
-            >
-              <div className="flex flex-col transition-transform duration-300 ease-out translate-y-0 group-hover:-translate-y-1/2">
-                <span className="h-[18px] flex items-center text-white">
-                  {item.label}
-                </span>
-                <span className="h-[18px] flex items-center text-white">
-                  {item.label}
-                </span>
-              </div>
-            </Link>
-          ))}
+          ].map((item) => {
+            const isActive = pathname === item.href;
+            return (
+              <Link
+                key={item.label}
+                href={item.href}
+                className={`group relative inline-flex flex-col justify-start overflow-hidden h-[18px] cursor-pointer ${
+                  isActive ? "text-[#38bdf8]" : "text-white"
+                }`}
+              >
+                <div className="flex flex-col transition-transform duration-300 ease-out translate-y-0 group-hover:-translate-y-1/2">
+                  <span className="h-[18px] flex items-center">
+                    {item.label}
+                  </span>
+                  <span className="h-[18px] flex items-center">
+                    {item.label}
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Theme Toggle Pill */}
@@ -221,29 +228,34 @@ export default function Navbar() {
             <div className="flex flex-col gap-2.5 w-full select-none">
               {[
                 { label: "Home", href: "/" },
-                { label: "Work", href: "#work" },
+                { label: "Work", href: "/work" },
                 { label: "About", href: "#about" },
                 { label: "Blog", href: "#blog" },
-              ].map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="w-full h-[54px] px-5 rounded-[12px] bg-white/[0.07] hover:bg-white/[0.11] transition-colors duration-500 ease-out text-white flex items-center justify-between text-[15px] font-normal"
-                >
-                  <span>{link.label}</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 256 256"
-                    fill="currentColor"
-                    className="text-white"
+              ].map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`w-full h-[54px] px-5 rounded-[12px] bg-white/[0.07] hover:bg-white/[0.11] transition-colors duration-500 ease-out flex items-center justify-between text-[15px] font-normal ${
+                      isActive ? "text-[#38bdf8]" : "text-white"
+                    }`}
                   >
-                    <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z" />
-                  </svg>
-                </Link>
-              ))}
+                    <span>{link.label}</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 256 256"
+                      fill="currentColor"
+                      className={isActive ? "text-[#38bdf8]" : "text-white"}
+                    >
+                      <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z" />
+                    </svg>
+                  </Link>
+                );
+              })}
 
               {/* Solid White Contact Me Button */}
               <Link
