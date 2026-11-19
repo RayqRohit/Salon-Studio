@@ -56,7 +56,7 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-5 text-[14px] font-normal tracking-normal mr-4 leading-[18px]">
           {[
             { label: "Work", href: "/work" },
-            { label: "About", href: "#about" },
+            { label: "About", href: "/about" },
             { label: "Blog", href: "#blog" },
             { label: "Contact", href: "#contact" },
           ].map((item) => {
@@ -229,7 +229,7 @@ export default function Navbar() {
               {[
                 { label: "Home", href: "/" },
                 { label: "Work", href: "/work" },
-                { label: "About", href: "#about" },
+                { label: "About", href: "/about" },
                 { label: "Blog", href: "#blog" },
               ].map((link) => {
                 const isActive = pathname === link.href;

@@ -9,7 +9,7 @@ export default function BioCard() {
     >
       {/* Top Profile Header */}
       <div className="flex items-center gap-4">
-        <div className="relative w-[60px] h-[60px] rounded-full overflow-hidden bg-zinc-800 shrink-0">
+        <div className="relative w-[70px] h-[70px] rounded-full overflow-hidden bg-zinc-800 shrink-0">
           <Image
             src="/images/avatar-ema.webp"
             alt="Ema Hanssen"

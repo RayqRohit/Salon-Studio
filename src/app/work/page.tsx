@@ -231,11 +231,10 @@ export default function WorkPage() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className={`absolute inset-0 transition-opacity duration-500 ease-out ${
-                  activeProject.id === project.id
+                className={`absolute inset-0 transition-opacity duration-500 ease-out ${activeProject.id === project.id
                     ? "opacity-100 z-10"
                     : "opacity-0 z-0 pointer-events-none"
-                }`}
+                  }`}
               >
                 <Image
                   src={project.src}
@@ -308,11 +307,10 @@ export default function WorkPage() {
                   key={item.id}
                   href={`/work/${item.id}`}
                   onMouseEnter={() => setActiveProject(item)}
-                  className={`group w-full h-[60px] md:h-[62px] px-5 md:px-6 rounded-[12px] flex items-center justify-between font-normal transition-all duration-300 ease-out cursor-pointer select-none active:scale-[0.995] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white/30 ${
-                    isSelected
+                  className={`group w-full h-[60px] md:h-[62px] px-5 md:px-6 rounded-[12px] flex items-center justify-between font-normal transition-all duration-300 ease-out cursor-pointer select-none active:scale-[0.995] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white/30 ${isSelected
                       ? "bg-white/[0.12] text-white"
                       : "bg-white/[0.07] text-white hover:bg-white/[0.11]"
-                  }`}
+                    }`}
                 >
                   <span className="text-[16px] md:text-[17px] font-normal">
                     {item.title}
