@@ -16,9 +16,11 @@ function ArrowIcon({ className = "text-white" }: { className?: string }) {
 export default function FooterSection({
   showAllProjects = true,
   showSocials = true,
+  showContactMe = true,
 }: {
   showAllProjects?: boolean;
   showSocials?: boolean;
+  showContactMe?: boolean;
 } = {}) {
   const [timeString, setTimeString] = useState<string>("");
 
@@ -149,24 +151,26 @@ export default function FooterSection({
       )}
 
       {/* 3. Solid White Contact Me Button */}
-      <Link
-        href="#contact"
-        className="group w-full h-[58px] px-5 md:px-6 rounded-[12px] bg-white text-black flex items-center justify-between text-[14px] font-normal hover:bg-white/85 transition-colors duration-500 ease-out shadow-sm"
-      >
-        <span>Contact Me</span>
-        <div className="relative w-[18px] h-[18px] overflow-hidden">
-          <div className="flex flex-col transition-transform duration-500 ease-out group-hover:-translate-y-1/2">
-            <div className="w-[18px] h-[18px] flex items-center justify-center shrink-0">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256" fill="currentColor" className="text-black">
-                <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z" />
-              </svg>
-            </div>
-            <div className="w-[18px] h-[18px] flex items-center justify-center shrink-0">
-              <ArrowIcon className="text-black" />
+      {showContactMe && (
+        <Link
+          href="/contact"
+          className="group w-full h-[58px] px-5 md:px-6 rounded-[12px] bg-white text-black flex items-center justify-between text-[14px] font-normal hover:bg-white/85 transition-colors duration-500 ease-out shadow-sm"
+        >
+          <span>Contact Me</span>
+          <div className="relative w-[18px] h-[18px] overflow-hidden">
+            <div className="flex flex-col transition-transform duration-500 ease-out group-hover:-translate-y-1/2">
+              <div className="w-[18px] h-[18px] flex items-center justify-center shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256" fill="currentColor" className="text-black">
+                  <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z" />
+                </svg>
+              </div>
+              <div className="w-[18px] h-[18px] flex items-center justify-center shrink-0">
+                <ArrowIcon className="text-black" />
+              </div>
             </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      )}
 
       {/* 4. White Large Footer Card */}
       <div className="w-full bg-white text-black rounded-[12px] p-8 md:p-12 lg:p-14 flex flex-col justify-between select-none mt-1">
@@ -192,14 +196,14 @@ export default function FooterSection({
             </div>
           </div>
 
-          {/* More Templates ↗ Button */}
+          {/* All works ↗ Button */}
           <Link
-            href="#"
+            href="https://www.framer.com/marketplace/creator/pawel-gola?via=pawelgola"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-[6px] bg-black text-white text-[13px] font-normal hover:bg-black/80 transition-colors"
           >
-            <span>All Work</span>
+            <span>All works</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 256 256" fill="currentColor">
               <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z" />
             </svg>

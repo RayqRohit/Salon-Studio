@@ -44,9 +44,9 @@ export default function Navbar() {
             />
           </svg>
           <div className="relative inline-flex flex-col justify-start overflow-hidden h-[18px] leading-[18px] font-medium text-[15px] tracking-normal">
-            <div className="flex flex-col transition-transform duration-300 ease-out translate-y-0 group-hover:-translate-y-1/2">
+            <div className="flex flex-col transition-transform duration-300 ease-out -translate-y-1/2 group-hover:translate-y-0">
               <span className="h-[18px] flex items-center text-white">
-                hanssen
+                ema
               </span>
               <span className="h-[18px] flex items-center text-white">
                 hanssen
@@ -61,7 +61,7 @@ export default function Navbar() {
             { label: "Work", href: "/work" },
             { label: "About", href: "/about" },
             { label: "Blog", href: "/blog" },
-            { label: "Contact", href: "#contact" },
+            { label: "Contact", href: "/contact" },
           ].map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -234,6 +234,7 @@ export default function Navbar() {
                 { label: "Work", href: "/work" },
                 { label: "About", href: "/about" },
                 { label: "Blog", href: "/blog" },
+                { label: "Contact", href: "/contact" },
               ].map((link) => {
                 const isActive = pathname === link.href;
                 return (
@@ -262,7 +263,7 @@ export default function Navbar() {
 
               {/* Solid White Contact Me Button */}
               <Link
-                href="#contact"
+                href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full h-[54px] px-5 rounded-[12px] bg-white text-black hover:bg-white/85 transition-colors duration-500 ease-out flex items-center justify-between text-[15px] font-normal shadow-sm"
               >

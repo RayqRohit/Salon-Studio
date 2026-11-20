@@ -102,7 +102,7 @@ export default function SocialLinks() {
 
       {/* Solid White Contact Me */}
       <Link
-        href="#contact"
+        href="/contact"
         className="group w-full h-[58px] px-5 md:px-6 rounded-[12px] bg-white text-black flex items-center justify-between text-[14px] font-normal hover:bg-white/85 transition-colors duration-500 ease-out shadow-sm"
       >
         <span>Contact Me</span>
