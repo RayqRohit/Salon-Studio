@@ -40,7 +40,7 @@ export default function WorkDetailClient({ project }: WorkDetailClientProps) {
                 alt={project.title}
                 fill
                 priority
-                className="object-cover object-[center_20%] pointer-events-none scale-[1.08] translate-y-7 md:translate-y-9"
+                className="object-cover object-[center_20%] pointer-events-none"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
             )}

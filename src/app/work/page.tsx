@@ -127,6 +127,9 @@ export default function WorkPage() {
 
   return (
     <main className="min-h-screen lg:h-screen lg:overflow-hidden bg-[#0e1011] p-3 md:p-3.5 text-white">
+      {/* Pinned Navbar (Fixed for mobile & desktop) */}
+      <Navbar />
+
       {/* ========================================================
           MOBILE & TABLET VIEW (< 1024px)
           Matches template reference on smaller screens:
@@ -140,9 +143,6 @@ export default function WorkPage() {
           aria-label="Work Introduction"
           className="relative bg-white/[0.07] rounded-[12px] p-7 pt-17 sm:p-9 sm:pt-24 flex flex-col gap-11 sm:gap-12 select-none overflow-hidden"
         >
-          {/* Docked Top Navbar */}
-          <Navbar />
-
           <h1 className="text-[32px] sm:text-[38px] font-normal text-white leading-tight">
             Work
           </h1>
@@ -224,9 +224,6 @@ export default function WorkPage() {
           onWheel={handleLeftWheel}
         >
           <div className="relative w-full h-full min-h-[580px] rounded-[12px] overflow-hidden bg-[#0e1011] select-none">
-            {/* Docked Top-Left Navbar (highlights Work in blue) */}
-            <Navbar />
-
             {/* Display Active Project Image with Crossfade */}
             {projects.map((project) => (
               <div
@@ -241,7 +238,7 @@ export default function WorkPage() {
                   alt={project.title}
                   fill
                   priority={project.id === "beige"}
-                  className="object-cover object-[center_20%] pointer-events-none scale-[1.08] translate-y-7 md:translate-y-9"
+                  className="object-cover object-[center_20%] pointer-events-none"
                   sizes="50vw"
                 />
               </div>

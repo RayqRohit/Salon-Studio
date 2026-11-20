@@ -24,8 +24,11 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Top Viewport Frame Mask (Prevents scrolled content from leaking above the docked navbar) */}
+      <div className="fixed top-0 left-0 right-0 h-3 md:h-3.5 bg-[#0e1011] z-40 pointer-events-none" />
+
       {/* Docked Top-Left Header */}
-      <header className="absolute top-0 left-0 z-30 flex items-center bg-[#0e1011] pt-0 pb-[10px] px-[16px] rounded-br-[20px] select-none">
+      <header className="fixed top-3 left-3 md:top-3.5 md:left-3.5 z-40 flex items-center bg-[#0e1011] pt-0 pb-[10px] px-[16px] rounded-br-[20px] select-none">
         {/* Brand Logo */}
         <Link href="/" className="group flex items-center gap-2 mr-3 md:mr-5 cursor-pointer">
           <svg
@@ -57,7 +60,7 @@ export default function Navbar() {
           {[
             { label: "Work", href: "/work" },
             { label: "About", href: "/about" },
-            { label: "Blog", href: "#blog" },
+            { label: "Blog", href: "/blog" },
             { label: "Contact", href: "#contact" },
           ].map((item) => {
             const isActive = pathname === item.href;
@@ -122,7 +125,7 @@ export default function Navbar() {
       </header>
 
       {/* Docked Top-Right Menu Button Notch (Mobile & Tablet: md:hidden) */}
-      <div className="md:hidden absolute top-0 right-0 z-30 flex items-center bg-[#0e1011] pt-0 pb-[10px] px-[16px] rounded-bl-[20px] select-none">
+      <div className="md:hidden fixed top-3 right-3 md:top-3.5 md:right-3.5 z-40 flex items-center bg-[#0e1011] pt-0 pb-[10px] px-[16px] rounded-bl-[20px] select-none">
         <button
           type="button"
           onClick={() => setMobileMenuOpen(true)}
@@ -230,7 +233,7 @@ export default function Navbar() {
                 { label: "Home", href: "/" },
                 { label: "Work", href: "/work" },
                 { label: "About", href: "/about" },
-                { label: "Blog", href: "#blog" },
+                { label: "Blog", href: "/blog" },
               ].map((link) => {
                 const isActive = pathname === link.href;
                 return (
