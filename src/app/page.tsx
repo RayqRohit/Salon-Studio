@@ -6,6 +6,7 @@ import BioCard from "@/components/BioCard";
 import SocialLinks from "@/components/SocialLinks";
 import LatestWork from "@/components/LatestWork";
 import FooterSection from "@/components/FooterSection";
+import Reveal from "@/components/Reveal";
 
 export default function Home() {
   const rightColumnRef = useRef<HTMLElement>(null);
@@ -35,11 +36,15 @@ export default function Home() {
           className="w-full h-full lg:overflow-y-auto no-scrollbar [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden flex flex-col gap-3"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {/* Top Row: BioCard (Full-width on mobile, 60% on desktop) and SocialLinks (Hidden on smaller screens) */}
+          {/* Top Row: BioCard and SocialLinks with smooth staggered reveal */}
           <div className="grid grid-cols-1 md:grid-cols-[6fr_4fr] gap-3 items-stretch shrink-0">
-            <BioCard />
-            <div className="hidden md:block">
-              <SocialLinks />
+            <Reveal delay={100} y={24} duration={1000} className="h-full">
+              <BioCard />
+            </Reveal>
+            <div className="hidden md:block h-full">
+              <Reveal delay={220} y={24} duration={1000} className="h-full">
+                <SocialLinks />
+              </Reveal>
             </div>
           </div>
 

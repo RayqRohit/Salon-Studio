@@ -30,9 +30,14 @@ const slides = [
 const extendedSlides = Array.from({ length: 30 }, () => slides).flat();
 
 export default function HeroCarousel() {
+  const [mounted, setMounted] = useState(false);
   // Start at index 45 (Slide 1 at the center of the 90-slide buffer)
   const [current, setCurrent] = useState(45);
   const [isTransitioning, setIsTransitioning] = useState(true);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
@@ -133,7 +138,11 @@ export default function HeroCarousel() {
   const activeDotIndex = ((current % slides.length) + slides.length) % slides.length;
 
   return (
-    <div className="relative w-full h-[480px] sm:h-[540px] lg:h-full lg:min-h-[580px] rounded-[12px] overflow-hidden bg-[#0e1011] select-none">
+    <div
+      className={`relative w-full h-[480px] sm:h-[540px] lg:h-full lg:min-h-[580px] rounded-[12px] overflow-hidden bg-[#0e1011] select-none transition-opacity duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        mounted ? "opacity-100" : "opacity-0"
+      }`}
+    >
       {/* Docked Top-Left Navbar */}
       <Navbar />
 
@@ -149,11 +158,10 @@ export default function HeroCarousel() {
       >
         <div
           onTransitionEnd={handleTransitionEnd}
-          className={`flex flex-row w-full h-full ${
-            isTransitioning
-              ? "transition-transform duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)]"
-              : "transition-none"
-          }`}
+          className={`flex flex-row w-full h-full ${isTransitioning
+            ? "transition-transform duration-[950ms] ease-[cubic-bezier(0.25,1,0.5,1)]"
+            : "transition-none"
+            }`}
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {extendedSlides.map((slide, index) => (
@@ -174,11 +182,11 @@ export default function HeroCarousel() {
               <div className="absolute left-5 bottom-5 sm:left-8 sm:bottom-8 z-10 pointer-events-auto">
                 <a
                   href="#work"
-                  className="flex items-center gap-1.5 px-[14px] py-[10px] rounded-[6px] bg-[#0e1011]/20 hover:bg-[#0e1011]/40 text-white text-[14px] font-normal leading-none transition-colors cursor-pointer"
+                  className="group flex items-center gap-1.5 px-[14px] py-[10px] rounded-[6px] bg-[#0e1011]/30 hover:bg-[#0e1011]/60 text-white text-[14px] font-normal leading-none transition-all duration-300 cursor-pointer backdrop-blur-[2px]"
                 >
                   <span>View Project</span>
                   <svg
-                    className="w-3.5 h-3.5"
+                    className="w-3.5 h-3.5 transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                     viewBox="0 0 14 14"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -203,7 +211,7 @@ export default function HeroCarousel() {
         type="button"
         onClick={prevSlide}
         aria-label="Previous slide"
-        className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 w-[40px] h-[40px] rounded-[4px] bg-[#0e1011]/20 hover:bg-[#0e1011]/40 transition-colors flex items-center justify-center cursor-pointer"
+        className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 w-[40px] h-[40px] rounded-[4px] bg-[#0e1011]/30 hover:bg-[#0e1011]/60 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center cursor-pointer backdrop-blur-[2px]"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
           <path fill="transparent" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M22.5 12.5 15 20l7.5 7.5" />
@@ -215,7 +223,7 @@ export default function HeroCarousel() {
         type="button"
         onClick={nextSlide}
         aria-label="Next slide"
-        className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 w-[40px] h-[40px] rounded-[4px] bg-[#0e1011]/20 hover:bg-[#0e1011]/40 transition-colors flex items-center justify-center cursor-pointer"
+        className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 w-[40px] h-[40px] rounded-[4px] bg-[#0e1011]/30 hover:bg-[#0e1011]/60 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center cursor-pointer backdrop-blur-[2px]"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
           <path fill="transparent" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.5 12.5 25 20l-7.5 7.5" />

@@ -4,9 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useTheme } from "@/context/ThemeContext";
 
 export default function Navbar() {
-  const [isDark, setIsDark] = useState(true);
+  const { isDark, toggleTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -44,7 +45,7 @@ export default function Navbar() {
             />
           </svg>
           <div className="relative inline-flex flex-col justify-start overflow-hidden h-[18px] leading-[18px] font-medium text-[15px] tracking-normal">
-            <div className="flex flex-col transition-transform duration-300 ease-out -translate-y-1/2 group-hover:translate-y-0">
+            <div className="flex flex-col transition-transform duration-400 ease-[cubic-bezier(0.25,1,0.5,1)] -translate-y-1/2 group-hover:translate-y-0">
               <span className="h-[18px] flex items-center text-white">
                 ema
               </span>
@@ -68,11 +69,10 @@ export default function Navbar() {
               <Link
                 key={item.label}
                 href={item.href}
-                className={`group relative inline-flex flex-col justify-start overflow-hidden h-[18px] cursor-pointer ${
-                  isActive ? "text-[#38bdf8]" : "text-white"
-                }`}
+                className={`group relative inline-flex flex-col justify-start overflow-hidden h-[18px] cursor-pointer ${isActive ? "text-[#38bdf8]" : "text-white"
+                  }`}
               >
-                <div className="flex flex-col transition-transform duration-300 ease-out translate-y-0 group-hover:-translate-y-1/2">
+                <div className="flex flex-col transition-transform duration-400 ease-[cubic-bezier(0.25,1,0.5,1)] translate-y-0 group-hover:-translate-y-1/2">
                   <span className="h-[18px] flex items-center">
                     {item.label}
                   </span>
@@ -88,14 +88,13 @@ export default function Navbar() {
         {/* Theme Toggle Pill */}
         <button
           type="button"
-          onClick={() => setIsDark(!isDark)}
+          onClick={toggleTheme}
           className="w-[30px] h-[20px] rounded-full bg-[#ffffff1c] flex items-center p-[6px] cursor-pointer hover:bg-[#ffffff25] transition-colors"
           aria-label="Toggle theme"
         >
           <span
-            className={`w-[8px] h-[8px] rounded-full bg-white transition-transform duration-200 ${
-              isDark ? "translate-x-[10px]" : "translate-x-0"
-            }`}
+            className={`w-[8px] h-[8px] rounded-full bg-white transition-transform duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] ${isDark ? "translate-x-[10px]" : "translate-x-0"
+              }`}
           />
         </button>
 
@@ -242,9 +241,8 @@ export default function Navbar() {
                     key={link.label}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`w-full h-[54px] px-5 rounded-[12px] bg-white/[0.07] hover:bg-white/[0.11] transition-colors duration-500 ease-out flex items-center justify-between text-[15px] font-normal ${
-                      isActive ? "text-[#38bdf8]" : "text-white"
-                    }`}
+                    className={`w-full h-[54px] px-5 rounded-[12px] bg-white/[0.07] hover:bg-white/[0.11] transition-colors duration-500 ease-out flex items-center justify-between text-[15px] font-normal ${isActive ? "text-[#38bdf8]" : "text-white"
+                      }`}
                   >
                     <span>{link.label}</span>
                     <svg
